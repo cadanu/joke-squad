@@ -1,0 +1,55 @@
+html {
+    background: url('./../images/chuck_norris.png');
+    background-repeat: no-repeat;
+    background-position-x: 7em;
+    background-position-y: 5em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15px 80px auto 150px 15px;
+    grid-template-rows: 70px auto 5% auto 1px;
+    grid-gap: 10px;
+}
+
+
+.grid-item-1-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-bottom: 20px 0;
+}
+
+
+.grid-item-2-2 {
+    grid-area: info;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grid-item-3-2 {
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    
+    z-index: 5;
+}
+
+@media (orientation: landscape) {
+    html {
+        background-position-x: 18em;
+	background-position-y: 2em;
+    }
+
+    .grid-item-3-2 {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+}

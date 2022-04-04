@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Raleway:wght@300&family=Source+Code+Pro:wght@200&display=swap');
+
+html {
+    max-height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    max-height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15px 80px auto 150px 15px;
+    grid-template-rows: 70px 70px 5% auto auto;
+    grid-gap: 10px;
+}
+
+header { /**************************/
+    grid-area: header;
+    grid-column: 1 / -1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 10px;
+    background-color: rosybrown;
+}
+
+#title-text {
+    font-size: 0.87em;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    padding: 0 0 10px 20px;
+}
+#title-text-name {
+    font-size: 0.9em;
+}
+
+.smaller-text {
+    font-size: 0.7em;
+}
+
+main {
+    margin-top: 56px;
+}
+
+.grid-item-1 { /**************************/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2 / 2;
+    margin-bottom: 20px 0;
+}
+
+#joke-area {
+    color: darkslategrey;
+    padding: 5px;
+}
+
+.grid-item-2 { /**************************/
+    grid-column-start: 2;
+    grid-column: 4 / -5;
+    grid-row: 4 / -4;
+}
+
+fieldset {
+    border: none;
+    padding: 10px;
+}
+
+legend {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+select {
+    border: 0.5px solid rosybrown;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: rgb(254, 255, 249);
+    opacity: 0.87;
+}
+
+.button-div {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    margin: 10px;
+    padding: 20px;
+}
+
+.buttons {
+    font-family: 'Bangers', cursive;
+    color: black;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: azure;
+}
+
+.grid-item-3 { /**************************/
+    text-align: center;
+    grid-column: 3 / 4;
+    grid-row: 5 / 5;
+}
+
+footer { /**************************/
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+}
+
+footer span section {
+    color: white;
+    font-size: 0.7em;
+    position: absolute;
+    left: 20px;
+    padding: 5px 0 0 0;
+}
+
+footer span img {
+    border: 1px inset white;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    padding: 10px 0 10px 10px;
+}
+
+@media (orientation: portrait) {
+    .grid-container {
+	grid-template-rows: 70px 120px 5% auto auto;
+    }
+}
