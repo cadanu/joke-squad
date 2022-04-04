@@ -26,13 +26,15 @@ header { /**************************/
 }
 
 #title-text {
-    font-size: 0.87em;
+    /* font-size: 0.87em; */
     font-family: 'Source Code Pro', monospace;
     color: white;
-    padding: 0 0 10px 20px;
+    /* padding: 0 0 10px 20px; */
 }
 #title-text-name {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+
+    padding: 0;
 }
 
 .smaller-text {
@@ -45,7 +47,7 @@ main {
 
 .grid-item-1 { /**************************/
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: 2 / 2;
     margin-bottom: 20px 0;
 }
@@ -131,4 +133,11 @@ footer span img {
     .grid-container {
 	grid-template-rows: 70px 120px 5% auto auto;
     }
+}
+
+@media screen and (max-width: 551px) {
+    .button-div {
+        top: 65%;
+    }
+
 }

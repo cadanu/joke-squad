@@ -74,7 +74,7 @@ function getJoke() {
             localStorage.setItem('joke', data.value.joke);
             localStorage.setItem('callback', $('#joke-categories option:selected').text());
 // go to next page
-            window.location.href = './pages/quote.html';
+            window.location.href = './pages/quote';
         },
         error : function(e) {
             $('#info-area').html('<h6>There was an error getting categories, this site may not work if you\'re using a vpn..</h3>');

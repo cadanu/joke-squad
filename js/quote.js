@@ -1,5 +1,11 @@
+function initiate() {
+    setTimeout( () => {
+        document.getElementById('bottom-bust').src = "../../images/chuck_norris_face.png";
+    }, 500);
+
+}
+
 $(document).ready( function() {
-    
 // print joke from local storage
     $('#joke-area').html(printJoke);
 
@@ -9,7 +15,7 @@ $(document).ready( function() {
 // back button
     try {
         $('#back-button').click( function() {
-            window.location.href = './../index.html';
+            window.location.href = '../../';
         });
     }
     catch(e) {
@@ -42,3 +48,5 @@ function printInfo() {
 
     return category;
 }
+
+document.addEventListener('DOMContentLoaded', initiate());
